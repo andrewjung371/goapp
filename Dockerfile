@@ -1,5 +1,5 @@
 # Dockerfile
-FROM golang:1.15-alphine3.12 AS gobuilder-stage
+FROM golang:1.15-alpine3.12 AS gobuilder-stage
 LABEL "purpose"="multi staging build."
 WORKDIR /usr/src/goapp
 COPY ./goapp.go .
